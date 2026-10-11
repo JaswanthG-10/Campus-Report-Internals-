@@ -1,0 +1,21 @@
+package com.campusissue.model;
+
+public class Admin extends User {
+    private int adminId;
+
+    public Admin() {
+    }
+
+    public Admin(int adminId, String username, String password) {
+        super(username, password);
+        this.adminId = adminId;
+    }
+
+    public int getAdminId() {
+        return adminId;
+    }
+
+    public void setAdminId(int adminId) {
+        this.adminId = adminId;
+    }
+}
